@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/style1.css">
+    <script src="https://kit.fontawesome.com/b1294fd637.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class="lead">
+        <i class="fa-solid fa-bars dash fa-1x"></i>
+        <!-- <h6>Calculator</h6> -->
+        <h3>Standard</h3>
+        <button onclick="hideShow()">
+            <i class="fa-solid fa-clock-rotate-left fa-2x hi"></i>
+        </button>
+        <br>
+    <input type="input" class="equation" value="" id="equation"><br>
+    <input type="input" class="input" value="0" id="input"><br>
+    
+    <!-- ########### Calculator buttons ########## -->
+
+
+    <!-- <input type="button"  value="D" onclick="backSpace()" class="btn btn-back"> -->
+    <input type="button"  value="C" onclick="reset()" class="btn ac">
+    <button onclick="backSpace()" class="btn btn-back">
+        <i class="fa-solid fa-delete-left"></i>
+    </button>
+    <input type="button"  value="%" onclick="getNum('%')" class="btn grey">
+    <input type="button"  value="/" onclick="getNum('/')" class="btn grey">
+    <br>
+    <input type="button"  value="7" onclick="getNum('7')" class="btn">
+    <input type="button"  value="8" onclick="getNum('8')" class="btn">
+    <input type="button"  value="9" onclick="getNum('9')" class="btn">
+    <input type="button"  value="+" onclick="getNum('+')" class="btn grey"><br>
+    <input type="button"  value="4" onclick="getNum('4')" class="btn">
+    <input type="button"  value="5" onclick="getNum('5')" class="btn">
+    <input type="button"  value="6" onclick="getNum('6')" class="btn">
+    <input type="button"  value="x" onclick="getNum('*')" class="btn grey"><br>
+    <input type="button"  value="1" onclick="getNum('1')" class="btn">
+    <input type="button"  value="2" onclick="getNum('2')" class="btn">
+    <input type="button"  value="3" onclick="getNum('3')" class="btn">
+    <input type="button"  value="-" onclick="getNum('-')" class="btn grey"><br>
+
+
+    <input type="button"  value="C" onclick="reset()" class="btn ac">
+
+
+    <input type="button"  value="0" onclick="getNum('0')" class="btn">
+    <input type="button"  value="." onclick="getNum('.')" class="btn ">
+    <input type="button"  value="=" onclick="ans()" class="btn ans">
+
+    </div>
+
+    
+        <div class="main">
+            <!-- <h3>History</h3> -->
+            <input type="button" onclick="clearHistory()" value="CLEAR" class="btn btn-his"><br>
+            <div class="history"> 
+                
+           </div>
+        </div>
+
+    <!-- <input type="button" value="hide/show" onclick="hideShow()"> -->
+
+  
+    <script src="Js File/file1.js"></script>
+    <!-- <script src="Js File/array.js"></script> -->
+</body>
+</html>
